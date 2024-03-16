@@ -1,14 +1,14 @@
 import functions
 
-index_of_tamplate = -1
-while index_of_tamplate < 0 or index_of_tamplate > 2:
-	index_of_tamplate = int(input("Choose tamplate(1, 2, 3): ")) - 1
+index_of_template = -1
+while index_of_template < 0 or index_of_template > 2:
+	index_of_template = int(input("Choose tamplate(1, 2, 3): ")) - 1
 
 
-template = functions.get_template(index_of_tamplate)
-words = functions.get_dict(index_of_tamplate)
+template = functions.get_template(index_of_template)
+words = functions.get_dict(index_of_template)
 
-if index_of_tamplate == 0:
+if index_of_template == 0:
 	print(template.format(
 		number = words["number1"],
 		measure_of_time = words["measure_of_time"],
@@ -29,7 +29,7 @@ if index_of_tamplate == 0:
 		silly_word = words["silly_word"],
 		noun5 = words["noun5"],
 	))
-elif index_of_tamplate == 1:
+elif index_of_template == 1:
 	print(template.format(
 		person_name = words["person_name"],
 		noun = words["noun1"],
@@ -49,7 +49,7 @@ elif index_of_tamplate == 1:
 		silly_word = words["silly_word"],
 		noun2 = words["noun2"],
 	))
-elif index_of_tamplate == 2:
+elif index_of_template == 2:
 	print(template.format(
 		person_name = words["person_name"],
 		adjective1 = words["adjective1"],
