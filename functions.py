@@ -12,26 +12,25 @@ being in the hospital is the {silly_word} {noun5} !
 """,
 
 """
-This weekend I am going camping with (Proper Noun {person_name} ).
+This weekend I am going camping with {person_name}.
 I packed my lantern, sleeping bag, and {noun}. I am so {adjective}
-to {verb1} in a tent. I am ({adjective2} (feeling)) we might see a(n) {animal},
+to {verb1} in a tent. I am {adjective2} we might see a(n) {animal},
 I hear they're kind of dangerous. While we're camping, we are going to hike,
 fish, and {verb2}. I have heard that the {color1} lake is great for
-({verb3} (ending in ing)). Then we will ({adverb} (ending in ly)) hike through the
-forest for {number1} {measure_of_time}. If I see a {color2} {animal} while hiking,
-I am going to bring it home as a pet! At night we will tell {number2} {silly_word}
-stories and roast {noun2} around the campfire!!
+{verb3}. Then we will {adverb} hike through theforest for {number1} {measure_of_time}.
+If I see a {color2} {animal2} while hiking,I am going to bring it home as a pet! At night
+we will tell {number2} {silly_word} stories and roast {noun2} around the campfire!!
 """,
 		
 """
-Dear (Proper Noun {person_name}), I am writing to you from a {adjective1}
+Dear {person_name}, I am writing to you from a {adjective1}
 castle in an enchanted forest. I found myself here one day after going for a
 ride on a {color} {animal} in {place}. There are {adjective2}
-{magical_creature1}(Plural) and {adjective3} {magical_creature2}(Plural) here! In the
+{magical_creature1} and {adjective3} {magical_creature2} here! In the
 {room} there is a pool full of {noun1}. I fall asleep each night on a {noun2}
-of {noun3}(Plural) and dream of {adjective4} {noun4}(Plural). It feels as though I
-have lived here for {number} (measure_of_time). I hope one day you can visit,
-although the only way to get here now is {verb}(ending in ing) on a {adjective5} {noun5}!!
+of {noun3} and dream of {adjective4} {noun4}. It feels as though I
+have lived here for {number}. I hope one day you can visit,
+although the only way to get here now is {verb} on a {adjective5} {noun5}!!
 """
 	]
 
@@ -69,7 +68,7 @@ def get_dict(index: int):
 		words["verb2"] = input("Input a verb: ")
 		words["color1"] = input("Input a color: ")
 		words["verb3"] = input("Input a verb + ing: ")
-		words["adverb + ly"] = input("Input a adverb: ")
+		words["adverb_+_ly"] = input("Input a adverb: ")
 		words["number1"] = input("Input a number: ")
 		words["measure_of_time"] = input("Input a measure of time: ")
 		words["color2"] = input("Input a number: ")
@@ -84,7 +83,6 @@ def get_dict(index: int):
 		words["color"] = input("Input a color: ")
 		words["animal"] = input("Input animal: ")
 		words["place"] = input("Input place: ")
-		words["place"] = input("Input place: ")
 		words["adjective2"] = input("Input a adjective: ")
 		words["magical_creature1"] = input("Input a magical creature: ")
 		words["adjective3"] = input("Input a adjective: ")
@@ -96,7 +94,7 @@ def get_dict(index: int):
 		words["adjective4"] = input("Input a adjective: ")
 		words["noun4"] = input("Input noun: ")
 		words["number"] = input("Input number: ")
-		words["verb"] = input("Input verb: ")
+		words["verb"] = input("Input verb (ending in ing): ")
 		words["adjective5"] = input("Input a adjective: ")
 		words["noun5"] = input("Input noun: ")
 		

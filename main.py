@@ -1,14 +1,12 @@
 import functions
 
-index_of_tamplate = 0
-while index_of_tamplate < 1 or index_of_tamplate > 3:
-	index_of_tamplate = int(input("Choose tamplate(1, 2, 3): "))
-    
-index_of_tamplate -= 1
+index_of_tamplate = -1
+while index_of_tamplate < 0 or index_of_tamplate > 2:
+	index_of_tamplate = int(input("Choose tamplate(1, 2, 3): ")) - 1
+
 
 template = functions.get_template(index_of_tamplate)
 words = functions.get_dict(index_of_tamplate)
-
 
 if index_of_tamplate == 0:
 	print(template.format(
@@ -32,6 +30,46 @@ if index_of_tamplate == 0:
 		noun5 = words["noun5"],
 	))
 elif index_of_tamplate == 1:
-	pass
+	print(template.format(
+		person_name = words["person_name"],
+		noun = words["noun1"],
+		adjective = words["adjective1"],
+		verb1 = words["verb1"],
+		adjective2 = words["adjective2"],
+		animal = words["animal1"],
+		verb2 = words["verb2"],
+		color1 = words["color1"],
+		verb3 = words["verb3"],
+		adverb = words["adverb_+_ly"],
+		number1 = words["number1"],
+		measure_of_time = words["measure_of_time"],
+		color2 = words["color2"],
+		animal2 = words["animal2"],
+		number2 = words["number2"],
+		silly_word = words["silly_word"],
+		noun2 = words["noun2"],
+	))
+elif index_of_tamplate == 2:
+	print(template.format(
+		person_name = words["person_name"],
+		adjective1 = words["adjective1"],
+		color = words["color"],
+		animal = words["animal"],
+		place = words["place"],
+		adjective2 = words["adjective2"],
+		magical_creature1 = words["magical_creature1"],
+		adjective3 = words["adjective3"],
+		magical_creature2 = words["magical_creature2"],
+		room = words["room"],
+		noun1 = words["noun1"],
+		noun2 = words["noun2"],
+		noun3 = words["noun3"],
+		adjective4 = words["adjective4"],
+		noun4 = words["noun4"],
+		number = words["number"],
+		verb = words["verb"],
+		adjective5 = words["adjective5"],
+		noun5 = words["noun5"],
+	))
 else:
-	pass
+	print("Something went wrong!")
