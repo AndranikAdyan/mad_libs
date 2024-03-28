@@ -1,8 +1,9 @@
+
 import functions
 
 index_of_template = -1
 while index_of_template < 0 or index_of_template > 2:
-	index_of_template = int(input("Choose tamplate(1, 2, 3): ")) - 1
+	index_of_template = functions.char_to_digit(input("Choose tamplate(1, 2, 3): ")) - 1
 
 
 template = functions.get_template(index_of_template)
