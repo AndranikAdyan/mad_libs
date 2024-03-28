@@ -40,6 +40,9 @@ def get_dict(index: int):
 	words = {}
 	if index == 0:
 		words["number1"] = input("Input a number: ")
+		while not words["number1"].isdigit():
+			print("Please check input format!")
+			words["number1"] = input("Input a number: ")
 		words["measure_of_time"] = input("Input a measure of time: ")
 		words["mode_of_transportation"] = input("Input a mode of transportation: ")
 		words["adjective1"] = input("Input a adjective: ")
@@ -49,6 +52,9 @@ def get_dict(index: int):
 		words["part_of_the_body1"] = input("Input a part of the body: ")
 		words["verb1"] = input("Input a verb: ")
 		words["number2"] = input("Input a number: ")
+		while not words["number2"].isdigit():
+			print("Please check input format!")
+			words["number2"] = input("Input a number: ")
 		words["noun2"] = input("Input a noun: ")
 		words["noun3"] = input("Input a noun: ")
 		words["part_of_the_body2"] = input("Input a part of the body: ")
@@ -68,12 +74,18 @@ def get_dict(index: int):
 		words["verb2"] = input("Input a verb: ")
 		words["color1"] = input("Input a color: ")
 		words["verb3"] = input("Input a verb + ing: ")
+		while words["verb3"][-3:] != "ing":
+			print("Please check input format!")
+			words["verb3"] = input("Input a verb + ing: ")
 		words["adverb_+_ly"] = input("Input a adverb: ")
 		words["number1"] = input("Input a number: ")
 		words["measure_of_time"] = input("Input a measure of time: ")
 		words["color2"] = input("Input a number: ")
 		words["animal2"] = input("Input a animal: ")
 		words["number2"] = input("Input a number: ")
+		while not words["number2"].isdigit():
+			print("Please check input format!")
+			words["number2"] = input("Input a number: ")
 		words["silly_word"] = input("Input a silly_word: ")
 		words["noun2"] = input("Input a noun: ")
  	
@@ -95,6 +107,9 @@ def get_dict(index: int):
 		words["noun4"] = input("Input noun: ")
 		words["number"] = input("Input number: ")
 		words["verb"] = input("Input verb (ending in ing): ")
+		while words["verb"][-3:] != "ing":
+			print("Please check input format!")
+			words["verb"] = input("Input verb (ending in ing): ")
 		words["adjective5"] = input("Input a adjective: ")
 		words["noun5"] = input("Input noun: ")
 		
